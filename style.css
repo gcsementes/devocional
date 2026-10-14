@@ -268,7 +268,6 @@ img { display: block; max-width: 100%; height: auto; }
   justify-content: center;
   gap: 1.25rem 2rem;
 }
-.footer-gc { width: auto; height: 3.4rem; }
 .footer-lagoinha { width: auto; height: 2.4rem; filter: brightness(0) opacity(.82); }
 
 /* Entrada do conteúdo do dia, uma vez, depois que o JS preenche o texto. */
