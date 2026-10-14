@@ -183,6 +183,32 @@ img { display: block; max-width: 100%; height: auto; }
 .prayer .section-title { color: var(--brand-text); }
 .prayer .copy { color: var(--ink); }
 
+/* Duas colunas em computadores; a leitura em sequência permanece no celular. */
+@media (min-width: 64rem) {
+  .devotional {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 3.25rem 3rem;
+    align-items: start;
+    max-width: 70rem;
+    padding-inline: 2rem;
+  }
+
+  .devotional-head,
+  .devotional > .verse,
+  .devotional > .share {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: var(--measure);
+    margin-inline: auto;
+  }
+
+  .devotional > .verse,
+  .devotional > .reading,
+  .devotional > .prayer,
+  .devotional > .share { margin-top: 0; }
+}
+
 /* Compartilhar */
 .share {
   margin-top: 3rem;
