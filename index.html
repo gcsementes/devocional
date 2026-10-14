@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f0e4" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Devocionais diários do GC Sementes." />
+    <title>GC Sementes | Devocional diário</title>
+    <link rel="icon" href="assets/logo_gc-simbolo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#devocional-card">Ir para o devocional</a>
+
+    <header class="site-header" id="inicio">
+      <div class="wrap header-inner">
+        <a class="brand" href="#inicio" aria-label="GC Sementes e Lagoinha Americana, início">
+          <img class="brand-symbol" src="assets/logo_gc-simbolo.png" alt="" width="1536" height="1024" />
+          <span class="brand-wordmark">GC <strong>Sementes</strong></span>
+          <span class="brand-pipe" aria-hidden="true"></span>
+          <img class="brand-lagoinha" src="assets/logo_lagoinha_americana.png" alt="" width="2172" height="724" />
+        </a>
+        <p class="header-note">Uma semente por dia</p>
+      </div>
+    </header>
+
+    <main>
+      <article id="devocional-card" class="devotional wrap" aria-labelledby="titulo-devocional" tabindex="-1">
+        <header class="devotional-head">
+          <p class="kicker">Devocional do dia</p>
+          <p id="data-atual" class="date"></p>
+          <h1 id="titulo-devocional" class="devotional-title"></h1>
+        </header>
+
+        <figure class="verse">
+          <blockquote id="versiculo" class="verse-text"></blockquote>
+          <figcaption id="referencia" class="reference"></figcaption>
+        </figure>
+
+        <section class="reading" aria-labelledby="h-reflexao">
+          <h2 id="h-reflexao" class="section-title">Reflexão</h2>
+          <p id="texto-reflexao" class="copy dropcap"></p>
+        </section>
+
+        <section class="prayer" aria-labelledby="h-oracao">
+          <h2 id="h-oracao" class="section-title">Oração</h2>
+          <p id="texto-oracao" class="copy"></p>
+        </section>
+
+        <section class="share" aria-labelledby="h-share">
+          <h2 id="h-share" class="share-title">Plante esta palavra em alguém</h2>
+          <div class="share-buttons">
+            <button id="share-whatsapp" class="button button-primary" type="button">Compartilhar no WhatsApp</button>
+            <button id="share-copy" class="button button-secondary" type="button">Copiar mensagem</button>
+          </div>
+          <p id="share-feedback" class="share-feedback" role="status"></p>
+        </section>
+      </article>
+
+      <aside class="closing wrap" aria-label="Versículo do GC Sementes">
+        <p class="closing-verse">“E o que semeia a boa semente é o Filho do Homem.”</p>
+        <cite>Mateus 13:37</cite>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-logos">
+          <img class="footer-gc" src="assets/logo_gc-nitida.png" alt="GC Sementes" width="2172" height="724" loading="lazy" />
+          <img class="footer-lagoinha" src="assets/logo_lagoinha_americana.png" alt="Lagoinha Americana" width="2172" height="724" loading="lazy" />
+        </div>
+        <p>© <span id="ano-atual"></span> GC Sementes</p>
+      </div>
+    </footer>
+
+    <script src="devocionais.js"></script>
+  </body>
+</html>
